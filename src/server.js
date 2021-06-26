@@ -5,7 +5,7 @@
 const express = require("express");
 const app = express();
 const initRoutes = require("./routes/web");
-
+const PORT = process.env.PORT || 5000;
 // Cho phép lý dữ liệu từ form method POST
 app.use(express.urlencoded({extended: true}));
 
@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended: true}));
 initRoutes(app);
 
 // chọn một port mà bạn muốn và sử dụng để chạy ứng dụng tại local
-let port = 8017;
+const PORT = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log(`Hello trungquandev.com, I'm running at localhost:${port}/`);
+  console.log(`Hello trungquandev.com, I'm running at localhost:${PORT}/`);
 });
