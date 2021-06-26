@@ -1,0 +1,19 @@
+{
+  "name": "vendor-service",
+  "version": "1.0.0",
+  "description": "Nodejs multiple upload files - trungquandev.com",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
